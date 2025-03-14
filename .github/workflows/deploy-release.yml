@@ -47,5 +47,5 @@ jobs:
           git config --global user.email "adsoft@live.com.mx"
           git add .
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          git push origin deploy-release
 
