@@ -17,6 +17,7 @@ jobs:
       - run: ls -la
       - uses: actions/checkout@v2
       - run: ls -la
+      - run: git branch   
       - run: echo 'hello universe'
       - name: Use Node.js 20.x
         uses: actions/setup-node@v1
@@ -47,5 +48,5 @@ jobs:
           git config --global user.email "adsoft@live.com.mx"
           git add .
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push origin deploy-release
+          git push
 
